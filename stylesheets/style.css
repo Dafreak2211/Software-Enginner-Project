@@ -1,0 +1,386 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.footer form {
+  position: relative;
+}
+
+.footer button {
+  padding: 14px 40px;
+  position: absolute;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  right: 83px;
+}
+
+.footer input[type="text"] {
+  height: 40px;
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition: 250ms all;
+  padding-left: 20px;
+}
+
+.footer input[type="text"]:focus {
+  border: 2px solid #007bff;
+}
+
+.subscribe {
+  grid-column: span 7;
+}
+
+.footer {
+  background: #181717;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 50px 100px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.provide {
+  grid-column: span 5;
+}
+
+.provide h3,
+.subscribe h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.contact label {
+  position: absolute;
+  top: 26px;
+  left: 17px;
+  transition: 250ms ease-out;
+}
+
+.contact input[type="text"] {
+  height: 40px;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #dad8d8;
+  outline: none;
+  padding-left: 20px;
+}
+
+.contact input[type="text"]:valid + lable {
+  display: none;
+}
+
+.contact input[type="text"]:focus + label,
+.contact input[type="text"]:valid + label {
+  top: -5px;
+}
+
+.contact input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.list {
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contact form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 50px 100px;
+  text-align: center;
+  background: #f0f0f073;
+}
+
+.contact p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.contact > h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.image {
+  text-align: center;
+}
+
+.star {
+  display: flex;
+  justify-content: flex-end;
+  color: #6c6641;
+  align-items: center;
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+
+.products .info {
+}
+
+.info p:nth-child(1) {
+  font-size: 15px;
+}
+
+.info p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logo {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  grid-column: span 9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #171414eb;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+.menu li a:before {
+  transition: 500ms;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #007bff;
+  width: 100%;
+  transform: scaleX(0);
+}
+
+.menu li a:hover:before {
+  transform: scaleX(1);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 100px;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: white;
+  transition: 250ms all;
+}
+
+.navbar.xxg {
+  height: 60px;
+  box-shadow: 0 0 19px #a69898;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.logo img {
+  height: 60px;
+  transition: 250ms;
+}
+.gallery {
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(12, 1fr);
+  overflow: hidden;
+}
+.gallery .parent {
+  grid-column: span 3;
+  background-size: cover;
+  position: relative;
+}
+
+.gallery .laptop {
+  background-image: url("../images/laptop.png");
+}
+
+.gallery .parent p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: white;
+  z-index: 99;
+}
+.gallery .tablet {
+  background-image: url("../images/tablet.png");
+}
+.gallery .accessory {
+  background-image: url("../images/photo-1545138697-45eb2968b249.png");
+}
+.gallery .phone {
+  background-image: url("../images/phone.png");
+}
+.gallery .gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 0.30575980392156865) 0%,
+    rgba(0, 1, 1, 0.23573179271708689) 100%
+  );
+  transition: 500ms;
+}
+.gallery a {
+  transition: 500ms;
+}
+.gallery a:hover {
+  transform: scale(1.1);
+}
+.gallery a:hover .gradient {
+  opacity: 0.5;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 70px;
+  grid-row-gap: 40px;
+}
+.products .product {
+  grid-column: span 3;
+  position: relative;
+}
+.featureproduct {
+  padding: 50px 100px;
+}
+
+.featureproduct > h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.products .product img {
+  height: 50%;
+  width: 75%;
+}
+.featureproduct .products .product a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-carousel {
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+div#main-carousel i {
+  display: none;
+}
+.main-carousel .imgban {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+  -o-transition: all ease-in-out 500ms;
+}
+
+.main-carousel #imgban3 {
+  background-image: url("../images/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-carousel #imgban2 {
+  background-image: url("../images/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-carousel #imgban1 {
+  background-image: url("../images/slide2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgbanbtn {
+  position: absolute;
+  z-index: 2000;
+  top: 50%;
+  font-size: 5rem;
+  color: rgba(0, 119, 255, 0.671);
+  cursor: pointer;
+}
+.imgbanbtn.imgbanbtn-prev {
+  left: 30px;
+}
+.imgbanbtn.imgbanbtn-next {
+  right: 30px;
+}
+.imgbanbtn:hover {
+  opacity: 0.8;
+}
+.contact textarea {
+  width: 100%;
+  border-color: #dad8d8;
+  outline: none;
+  padding-left: 20px;
+}
+.list.special {
+  margin-top: 30px;
+}
